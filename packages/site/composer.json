@@ -1,0 +1,24 @@
+{
+	"name": "narkniro/site",
+	"type": "typo3-cms-extension",
+	"description": "",
+	"minimum-stability": "stable",
+	"license": "proprietary",
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "site"
+		}
+	},
+	"require": {
+		"php" : "^7.4",
+		"typo3/cms-core": "^11.5"
+	},
+	"autoload": {
+		"SITE\\Microsite\\": "Classes/"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"SITE\\Microsite\\Tests\\": "Tests/"
+		}
+	}
+}

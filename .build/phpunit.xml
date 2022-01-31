@@ -1,0 +1,26 @@
+<phpunit
+    backupGlobals="true"
+    backupStaticAttributes="false"
+    bootstrap="../vendor/nimut/testing-framework/res/Configuration/UnitTestsBootstrap.php"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertWarningsToExceptions="true"
+    forceCoversAnnotation="false"
+    processIsolation="false"
+    stopOnError="false"
+    stopOnFailure="false"
+    stopOnIncomplete="false"
+    stopOnSkipped="false"
+    verbose="false">
+
+    <testsuites>
+        <testsuite name="ContentMigration">
+            <directory>../packages/microsite/Tests/Unit/</directory>
+        </testsuite>
+    </testsuites>
+
+    <logging>
+        <log type="junit" target="reports/phpunit-unit.xml"/>
+    </logging>
+
+</phpunit>

@@ -1,0 +1,36 @@
+### Composer template
+composer.phar
+/vendor/
+
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+.DS_Store
+!.build/.gitkeep
+
+### Example user template template
+
+### TYPO3
+
+.env
+
+# TYPO3 Symlinks
+public/index.php
+public/typo3
+
+# TYPO3 shared folder
+public/typo3temp
+public/uploads
+public/fileadmin
+var
+/public/_assets
+
+public/typo3conf/*
+!/public/typo3conf/LocalConfiguration.php
+!/public/typo3conf/AdditionalConfiguration.php
+/.php-cs-fixer.cache
