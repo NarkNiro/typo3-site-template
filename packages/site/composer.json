@@ -14,11 +14,11 @@
 		"typo3/cms-core": "^11.5"
 	},
 	"autoload": {
-		"SITE\\Microsite\\": "Classes/"
+		"NarkNiro\\Site\\": "Classes/"
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"SITE\\Microsite\\Tests\\": "Tests/"
+			"NarkNiro\\Site\\Tests\\": "Tests/"
 		}
 	}
 }
