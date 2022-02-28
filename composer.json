@@ -70,6 +70,9 @@
 		"update-schema": [
 			"@php vendor/bin/typo3cms database:updateschema *.add,*.change"
 		],
+		"setupactive": [
+			"@php vendor/bin/typo3cms extension:setupactive"
+		],
 		"after-deploy": [
 			"@update-schema",
 			"@cache-flush"
