@@ -7,7 +7,7 @@ return (static function() {
         ],
         'DB' => [
             'Connections' => [
-                'Oracle' => [
+                'Default' => [
                     'charset' => 'utf8mb4',
                     'dbname' => 'db',
                     'driver' => 'mysqli',
