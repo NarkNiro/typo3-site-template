@@ -61,7 +61,7 @@ return (static function() {
             ],
             'trustedHostsPattern' => '.*.*',
             'devIPmask' => '*',
-            'sitename' =>  sprintf('DEV %s', getenv('SITENAME'))
+            'sitename' =>  sprintf('DDEV %s', getenv('SITENAME'))
         ],
     ];
 })();
