@@ -56,8 +56,8 @@
 			"@test:php:unit",
 			"@test:php:functional"
 		],
-		"test:php:unit": "phpunit --colors=always --configuration ./build/phpunit.xml",
-		"test:php:functional": "@test:php:unit --configuration ./build/phpunit-functional.xml",
+		"test:php:unit": "phpunit --colors=always --configuration ./.build/phpunit.xml",
+		"test:php:functional": "@test:php:unit --configuration ./.build/phpunit-functional.xml",
 		"package-states": [
 			"@php vendor/bin/typo3cms install:generatepackagestates"
 		],
@@ -71,7 +71,7 @@
 			"@php vendor/bin/typo3cms database:updateschema *.add,*.change"
 		],
 		"setupactive": [
-			"@php vendor/bin/typo3cms extension:setupactive"
+			"@php vendor/bin/typo3cms extension:setup"
 		],
 		"after-deploy": [
 			"@update-schema",
