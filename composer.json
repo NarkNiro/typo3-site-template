@@ -15,12 +15,21 @@
 		"allow-plugins": {
 			"typo3/class-alias-loader": true,
 			"typo3/cms-composer-installers": true,
-			"helhum/dotenv-connector": true
+			"helhum/dotenv-connector": true,
+			"cweagans/composer-patches": true
 		}
 	},
 	"extra": {
 		"helhum/dotenv-connector": {
 			"env-file": ".env"
+		},
+		"patcher": {
+			"search": "patches",
+			"sources": {
+				"project": true,
+				"vendors": false,
+				"packages": false
+			}
 		}
 	},
 	"repositories": {
@@ -30,22 +39,32 @@
 	"require": {
 		"php": "^7.4",
 		"helhum/dotenv-connector": "^3.0",
-		"helhum/typo3-console": "^7.0",
+		"helhum/typo3-console": "^7.1",
 		"narkniro/site": "@dev",
 		"typo3/cms-fluid-styled-content": "^11.5",
 		"typo3/cms-info": "^11.5",
 		"typo3/cms-rte-ckeditor": "^11.5",
 		"typo3/cms-setup": "^11.5",
+		"typo3/cms-t3editor": "^11.5",
 		"typo3/cms-tstemplate": "^11.5",
-		"typo3/minimal": "^11.5"
+		"typo3/cms-backend": "^11.5",
+		"typo3/cms-core": "^11.5",
+		"typo3/cms-extbase": "^11.5",
+		"typo3/cms-extensionmanager": "^11.5",
+		"typo3/cms-filelist": "^11.5",
+		"typo3/cms-fluid": "^11.5",
+		"typo3/cms-frontend": "^11.5",
+		"typo3/cms-install": "^11.5",
+		"typo3/cms-composer-installers": "4.0.x-dev",
+		"vaimo/composer-patches": "^5.1"
 	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "^3.0",
 		"helmich/typo3-typoscript-lint": "^2.5",
-		"phpstan/phpstan": "^1.3",
+		"phpstan/phpstan": "^1.9",
 		"phpunit/phpunit": "^9.5",
-		"saschaegerer/phpstan-typo3": "^1.0",
-		"typo3/coding-standards": "^0.5"
+		"saschaegerer/phpstan-typo3": "^1.8",
+		"typo3/coding-standards": "^0.7"
 	},
 	"scripts": {
 		"cs:check": "php-cs-fixer fix --config ./.build/.php-cs-rules.php --ansi --diff --verbose --dry-run",
