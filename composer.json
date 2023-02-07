@@ -51,16 +51,13 @@
 		"cs:check": "php-cs-fixer fix --config ./.build/.php-cs-rules.php --ansi --diff --verbose --dry-run",
 		"cs:fix": "php-cs-fixer fix --config ./.build/.php-cs-rules.php --ansi",
 		"analyze:php": "phpstan analyse --ansi --no-progress --memory-limit=768M --configuration=phpstan.neon",
-		"lint:typoscript": "typoscript-lint --ansi --config=build/typoscript-lint.yml",
+		"lint:typoscript": "typoscript-lint --ansi --config=./.build/typoscript-lint.yml",
 		"test:php": [
 			"@test:php:unit",
 			"@test:php:functional"
 		],
 		"test:php:unit": "phpunit --colors=always --configuration ./.build/phpunit.xml",
 		"test:php:functional": "@test:php:unit --configuration ./.build/phpunit-functional.xml",
-		"package-states": [
-			"@php vendor/bin/typo3cms install:generatepackagestates"
-		],
 		"folder-structure": [
 			"@php vendor/bin/typo3cms install:fixfolderstructure"
 		],
