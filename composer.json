@@ -37,7 +37,7 @@
 		"packages": {"type": "path", "url": "packages/*"}
 	},
 	"require": {
-		"php": "^7.4",
+		"php": "^7.4 || ^8.0",
 		"helhum/dotenv-connector": "^3.0",
 		"helhum/typo3-console": "^7.1",
 		"narkniro/site": "@dev",
